@@ -16,9 +16,9 @@ namespace WorkbookProgressSample {
         }
 
         private async void butRun_Click(object sender, EventArgs e) {
-            butRun.Enabled = false;
             pbLoad.Value = 0;
             pbExport.Value = 0;
+            butRun.Enabled = false;
             using (Workbook workbook = new Workbook()) {
                 await workbook.LoadDocumentAsync("document.xlsx",
                     new Progress<int>((progress) => {
