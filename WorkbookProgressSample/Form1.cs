@@ -16,7 +16,7 @@ namespace WorkbookProgressSample {
         }
 
         private async void butRun_Click(object sender, EventArgs e) {
-            lblDone.Visible = false;
+            butRun.Enabled = false;
             pbLoad.Value = 0;
             pbExport.Value = 0;
             using (Workbook workbook = new Workbook()) {
@@ -31,7 +31,7 @@ namespace WorkbookProgressSample {
                         pbExport.Refresh();
                     }));
             }
-            lblDone.Visible = true;
+            butRun.Enabled = true;
         }
     }
 }

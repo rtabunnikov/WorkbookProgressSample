@@ -29,7 +29,6 @@ namespace WorkbookProgressSample {
             this.label2 = new System.Windows.Forms.Label();
             this.pbExport = new System.Windows.Forms.ProgressBar();
             this.butRun = new System.Windows.Forms.Button();
-            this.lblDone = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -79,24 +78,11 @@ namespace WorkbookProgressSample {
             this.butRun.UseVisualStyleBackColor = true;
             this.butRun.Click += new System.EventHandler(this.butRun_Click);
             // 
-            // lblDone
-            // 
-            this.lblDone.AutoSize = true;
-            this.lblDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDone.ForeColor = System.Drawing.Color.Red;
-            this.lblDone.Location = new System.Drawing.Point(27, 209);
-            this.lblDone.Name = "lblDone";
-            this.lblDone.Size = new System.Drawing.Size(50, 17);
-            this.lblDone.TabIndex = 5;
-            this.lblDone.Text = "Done!";
-            this.lblDone.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 273);
-            this.Controls.Add(this.lblDone);
             this.Controls.Add(this.butRun);
             this.Controls.Add(this.pbExport);
             this.Controls.Add(this.label2);
@@ -117,7 +103,6 @@ namespace WorkbookProgressSample {
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar pbExport;
         private System.Windows.Forms.Button butRun;
-        private System.Windows.Forms.Label lblDone;
     }
 }
 
