@@ -28,7 +28,7 @@ namespace WorkbookProgressSample {
             this.pbLoad = new System.Windows.Forms.ProgressBar();
             this.label2 = new System.Windows.Forms.Label();
             this.pbExport = new System.Windows.Forms.ProgressBar();
-            this.butRun = new System.Windows.Forms.Button();
+            this.butRunCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -67,23 +67,23 @@ namespace WorkbookProgressSample {
             this.pbExport.Size = new System.Drawing.Size(507, 23);
             this.pbExport.TabIndex = 3;
             // 
-            // butRun
+            // butRunCancel
             // 
-            this.butRun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.butRun.Location = new System.Drawing.Point(438, 200);
-            this.butRun.Name = "butRun";
-            this.butRun.Size = new System.Drawing.Size(99, 34);
-            this.butRun.TabIndex = 4;
-            this.butRun.Text = "Run";
-            this.butRun.UseVisualStyleBackColor = true;
-            this.butRun.Click += new System.EventHandler(this.butRun_Click);
+            this.butRunCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.butRunCancel.Location = new System.Drawing.Point(418, 200);
+            this.butRunCancel.Name = "butRunCancel";
+            this.butRunCancel.Size = new System.Drawing.Size(119, 34);
+            this.butRunCancel.TabIndex = 4;
+            this.butRunCancel.Text = "Run";
+            this.butRunCancel.UseVisualStyleBackColor = true;
+            this.butRunCancel.Click += new System.EventHandler(this.RunCancel_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(573, 273);
-            this.Controls.Add(this.butRun);
+            this.Controls.Add(this.butRunCancel);
             this.Controls.Add(this.pbExport);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pbLoad);
@@ -102,7 +102,7 @@ namespace WorkbookProgressSample {
         private System.Windows.Forms.ProgressBar pbLoad;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ProgressBar pbExport;
-        private System.Windows.Forms.Button butRun;
+        private System.Windows.Forms.Button butRunCancel;
     }
 }
 
