@@ -54,5 +54,9 @@ namespace WorkbookProgressSample {
                 }
             }
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e) {
+            cancellationSource?.Cancel();
+        }
     }
 }
